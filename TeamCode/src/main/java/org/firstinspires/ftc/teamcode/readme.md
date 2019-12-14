@@ -1,8 +1,6 @@
 ## TeamCode Module
 
-Welcome!
-
-This module, TeamCode, is the place where we maintain OpMode code for the **MARVELS**
+This module, TeamCode, is the place where we maintain our OpMode code for the **MARVELS**
 robot controller App.  
 
 To store the most recent version of an OpMode here, use the GitHub "*Upload files*" button, which will begin a Git "*Commit*" operation.  Always be sure to include a short paragraps that describes why you are commiting these files, in the *Add an optional extended description* box.  GitHub may call this optional, but it is **very important** to document the purpose of all commits for future reference; which will be especially useful to other developers.
