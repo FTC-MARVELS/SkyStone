@@ -24,6 +24,16 @@ public class AutonomousWorkerMethods extends LinearOpMode {
     private DcMotor LeftDriveMotorAsDcMotor;
     private DcMotor BackDriveMotorAsDcMotor;
 
+  @Override
+  public void runOpMode() {
+    PullServoAsServo = hardwareMap.servo.get("PullServoAsServo");
+    PullServo2AsServo = hardwareMap.servo.get("PullServo2AsServo");
+    FrontDriveMotorAsDcMotor = hardwareMap.dcMotor.get("FrontDriveMotorAsDcMotor");
+    RightDriveMotorAsDcMotor = hardwareMap.dcMotor.get("RightDriveMotorAsDcMotor");
+    LeftDriveMotorAsDcMotor = hardwareMap.dcMotor.get("LeftDriveMotorAsDcMotor");
+    BackDriveMotorAsDcMotor = hardwareMap.dcMotor.get("BackDriveMotorAsDcMotor");
+  }
+
     public void deliverSS() {
         // From the quary, identify a Skystone from ordinary orange stones, and  
         //  deliver it to the building zone.  Repeat for a second Skystone.
