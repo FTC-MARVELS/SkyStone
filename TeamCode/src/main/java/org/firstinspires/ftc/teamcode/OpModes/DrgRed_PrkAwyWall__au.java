@@ -10,6 +10,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Servo;
+import org.firstinspires.ftc.teamcode.WorkerClasses.AutonomousWorkerMethods;
 
 @Autonomous(name = "DrgRed_PrkAwyWall", group = "")
 
@@ -34,8 +35,11 @@ public class DrgRed_PrkAwyWall__au extends LinearOpMode {
     LeftDriveMotorAsDcMotor = hardwareMap.dcMotor.get("LeftDriveMotorAsDcMotor");
     BackDriveMotorAsDcMotor = hardwareMap.dcMotor.get("BackDriveMotorAsDcMotor");
 
+    // declare worker class(es)
+    AutonomousWorkerMethods workers = new AutonomousWorkerMethods();
+
     // call required methods in the correct order
-    dragRed();            // drag red foundation to building site
-    parkAwayFromWall();   // park under skybridge, away from wall
+    workers.dragRed();            // drag red foundation to building site
+    workers.parkAwayFromWall();   // park under skybridge, away from wall
   }
 }

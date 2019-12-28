@@ -42,9 +42,12 @@ public class DrgBlue_PrkAgnstWall__au extends LinearOpMode {
     RightDriveMotorAsDcMotor = hardwareMap.dcMotor.get("RightDriveMotorAsDcMotor");
     LeftDriveMotorAsDcMotor = hardwareMap.dcMotor.get("LeftDriveMotorAsDcMotor");
     BackDriveMotorAsDcMotor = hardwareMap.dcMotor.get("BackDriveMotorAsDcMotor");
+    
+    // declare worker class(es)
+    AutonomousWorkerMethods workers = new AutonomousWorkerMethods();
 
     // call required methods in the correct order
-    dragBlue();           // drag blue foundation to building site
-    parkAgainstWall();    // park under skybridge, agaisnt wall
+    workers.dragBlue();           // drag blue foundation to building site
+    workers.parkAgainstWall();    // park under skybridge, agaisnt wall
   }
 }
